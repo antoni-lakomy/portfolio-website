@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Antoni Łakomy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">O mnie</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Antoni Łakomy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">O mnie</a></li>
+          <li><a href="galeria.html" onclick="toggleMenu()">Galeria</a></li>
+          <li><a href="kontakt.html" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/antoni-lakomy-profile.jpg"
+          alt="Antoni Łakomy zdjęcie profilowe"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Twój świetlik</p>
+        <h1 class="title">Antoni Łakomy</h1>
+        <p class="section__text__p2">Lighting Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/Another_Pink_Floyd_2024_Rider_Swiatlo.pdf')"
+          >
+            Przykładowy rider
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='./kontakt.html'"
+          >
+            Kontakt
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/instagram-1.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/lakomy_swietlik/'"
+          />
+          <img
+            src="./assets/facebook.png"
+            alt="My facebook profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/lakomy.swietlik'"
+          />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2024 Antoni Łakomy. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

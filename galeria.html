@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Antoni Łakomy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">O mnie</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Antoni Łakomy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">O mnie</a></li>
+          <li><a href="galeria.html" onclick="toggleMenu()">Galeria</a></li>
+          <li><a href="kontakt.html" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="gallery">
+      <p class="section__text__p1">Przykładowe realizacje</p>
+      <h1 class="title">Galeria</h1>
+      <div class="gallery-container">
+        <img src="./assets/img-1.jpg" alt="" class="gallery-img" />
+        <img src="./assets/img-2.jpg" alt="" class="gallery-img" />
+        <img src="./assets/img-3.jpg" alt="" class="gallery-img" />
+        <img src="./assets/img-4.jpg" alt="" class="gallery-img" />
+        <img src="./assets/img-5.jpg" alt="" class="gallery-img" />
+        <img src="./assets/img-6.jpg" alt="" class="gallery-img" />
+      </div>
+      <div class="video-container">
+        <iframe class="video-video"
+          width="400"
+          height="225"
+          src="https://www.youtube.com/embed/Sa1K0hvKC1I?si=N5mmyVbfyPETn2j-"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2024 Antoni Łakomy. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
